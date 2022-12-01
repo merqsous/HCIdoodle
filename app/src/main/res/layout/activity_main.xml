@@ -7,13 +7,18 @@
     android:background="#252424"
     tools:context="com.example.HCIdoodle.MainActivity">
 
+
     <com.example.HCIdoodle.DrawingView
 
         android:id="@+id/canvas"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#3A3939"
+        android:alpha="0"
+        android:background="#1B1A1A"
         app:layout_constraintBottom_toTopOf="@id/colorPicker"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,42 +26,45 @@
 
     <LinearLayout
         android:id="@+id/colorPicker"
-        android:layout_width="311dp"
-        android:layout_height="77dp"
+        android:layout_width="333dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/seekBar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <View
+        <ImageButton
             android:layout_width="77dp"
             android:layout_height="match_parent"
             android:background="#05CBE4"
             android:contentDescription="@string/app_name"
             android:onClick="setColor" />
 
-        <View
+        <ImageButton
             android:layout_width="77dp"
             android:layout_height="match_parent"
             android:background="#00FF00"
             android:contentDescription="@string/app_name"
             android:onClick="setColor" />
 
-        <View
-            android:layout_width="77dp"
+        <ImageButton
+            android:layout_width="89dp"
             android:layout_height="match_parent"
             android:background="#F44336"
             android:contentDescription="@string/app_name"
             android:onClick="setColor" />
 
-        <View
-            android:layout_width="77dp"
-            android:layout_height="wrap_content"
+        <ImageButton
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
             android:background="#673AB7"
-            android:clipToOutline="true"
             android:contentDescription="@string/app_name"
             android:onClick="setColor" />
+
 
     </LinearLayout>
 
@@ -64,11 +72,34 @@
         android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
         android:max="9"
         android:progress="2"
         android:progressTint="#FFEB3B"
         android:thumbTint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:max="100"
+        android:progress="100"
+        android:progressTint="#FFEB3B"
+        android:thumbTint="#F44336"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="87dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:onClick="deleteDrawing"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

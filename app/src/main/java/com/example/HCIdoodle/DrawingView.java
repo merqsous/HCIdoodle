@@ -71,4 +71,10 @@ public class DrawingView extends View {
     public void setCurrentWidth(int width) {
         currentWidth = (width + 1) * 4;
     }
+    public void erase() {
+        paths.clear();
+        colors.clear();
+        widths.clear();
+        invalidate();
+    }
 }
