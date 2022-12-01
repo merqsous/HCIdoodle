@@ -1,14 +1,14 @@
 # HCI DOODLE DARK MODE
 # How to run the code? 
-* Install Android Studio. 
+* Install Android Studio.
 * Download the zip file from Github.
-* open the file by using the Android Studio
+* open the file by using the Android Studio.
 
 # The code structure: 
-* app/java/com.example.HCIdoodle/MainActivity 
-* app/java/com.example.HCIdoodle/DrawingView
-* app/java/com.example.HCIdoodle/TouchListener
-* app/res/layout/Activity_Main.xml 
+* app/java/com.example.HCIdoodle/MainActivity : setColor(), and seekBars()
+* app/java/com.example.HCIdoodle/DrawingView : the draing canvas functions, onDraw (), setCurrentColor(), setCurrentWidth(), and erase()
+* app/java/com.example.HCIdoodle/TouchListener : onTouch() for x-axis and y-axis of the DrawingView
+* app/res/layout/Activity_Main.xml : the layout of the UI design.
 
 # Online References
 * [How to built a Drawing Android Application](https://dragosholban.com/2018/04/21/how-to-build-a-drawing-android-app/)
