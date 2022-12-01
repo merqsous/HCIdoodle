@@ -7,7 +7,7 @@
 # The code structure: 
 * app/java/com.example.HCIdoodle/MainActivity : setColor(), and seekBars()
 * app/java/com.example.HCIdoodle/DrawingView : The drwaing canvas functions, onDraw (), setCurrentColor(), setCurrentWidth(), and erase()
-* app/java/com.example.HCIdoodle/TouchListener : onTouch() for x-axis and y-axis of the DrawingView
+* app/java/com.example.HCIdoodle/TouchListener : onTouch() for x-axis and y-axis path of the Draw.
 * app/res/layout/Activity_Main.xml : The layout of the UI design.
 
 # Online References
