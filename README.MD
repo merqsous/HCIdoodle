@@ -1,4 +1,4 @@
-# HCI DOODLE DARK MODE
+# HCI DOODLE DARK MODE Techincal 8 and Technical 9 
 # How to run the code? 
 * Install Android Studio.
 * Download the zip file from Github.
@@ -15,3 +15,5 @@
 * [Opcity feature](http://android-er.blogspot.com/2015/02/set-opacity-alpha-of-imageview-and.html)
 * [How to set alpha for opacity](https://riptutorial.com/android/example/16540/set-alpha)
 * [How to use two seekbars](https://stackoverflow.com/questions/60116432/how-to-work-with-two-or-more-seek-bars-on-android)
+* [How to upload an image](https://www.geeksforgeeks.org/how-to-select-an-image-from-gallery-in-android/)
+
