@@ -5,10 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#252424"
-    tools:context="com.example.HCIdoodle.MainActivity">
+    tools:context="com.example.HCIdoodle2.MainActivity">
 
 
-    <com.example.HCIdoodle.DrawingView
+    <ImageView
+        android:id="@+id/IVPreviewImage"
+        android:layout_width="286dp"
+        android:layout_height="499dp"
+        app:layout_constraintBottom_toBottomOf="@+id/canvas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/canvas">
+
+    </ImageView>
+
+    <com.example.HCIdoodle2.DrawingView
 
         android:id="@+id/canvas"
         android:layout_width="0dp"
@@ -21,8 +32,10 @@
         android:background="#1B1A1A"
         app:layout_constraintBottom_toTopOf="@id/colorPicker"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/colorPicker"
@@ -95,11 +108,33 @@
         android:id="@+id/button"
         android:layout_width="87dp"
         android:layout_height="51dp"
+        android:layout_marginStart="52dp"
         android:layout_weight="1"
         android:onClick="deleteDrawing"
         android:text="Clear"
+        app:layout_constraintStart_toStartOf="@+id/canvas"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BSelectImage"
+        android:layout_width="87dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:onClick="deleteDrawing"
+        android:text="Image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/canvas" />
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/savegallery"
+        android:layout_width="87dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:onClick="deleteDrawing"
+        android:text="save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BSelectImage"></Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

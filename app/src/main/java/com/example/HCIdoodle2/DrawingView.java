@@ -1,19 +1,18 @@
-package com.example.HCIdoodle;
+package com.example.HCIdoodle2;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import java.util.ArrayList;
 
-public class DrawingView extends View {
+public class DrawingView extends androidx.appcompat.widget.AppCompatImageView {
     private ArrayList<Path> paths = new ArrayList<>();
     private ArrayList<Integer> colors = new ArrayList<>();
     private int currentColor = 0xFF000000;

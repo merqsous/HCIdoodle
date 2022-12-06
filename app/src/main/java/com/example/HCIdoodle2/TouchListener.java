@@ -1,4 +1,4 @@
-package com.example.HCIdoodle;
+package com.example.HCIdoodle2;
 
 import android.graphics.Path;
 import android.view.MotionEvent;
